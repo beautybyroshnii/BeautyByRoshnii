@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty by Roshnii</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Images/favicon/BeautyByRoshniFavicon.png" />
+  <script src="Scripts.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="box"><img src="Images/favicon/BeautyByRoshniFavicon.png" width="60" height="60"
+          style="margin-top: 12px;"></div>
+      <div class="box logo">Beauty by Roshnii</div>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="navbar">
+      <span class="close-btn" id="close-btn">&times;</span>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Unveil Your True Beauty</h1>
+    <a href="#book" class="btn">Book Your Glow Up</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <!-- <img src="https://placehold.co/400x300" alt="About Us" /> -->
+      <div>
+        <h2>About Us</h2>
+        <p class="p">Welcome to <b>Beauty by Roshnii</b>, where beauty meets elegance and self-care becomes an experience.
+          Founded with a passion for artistry and a deep understanding of timeless beauty,
+          we are a premium beauty parlour offering luxurious services tailored to celebrate your individuality.
+          Every brushstroke, every detail, is guided by a commitment to excellence, precision, and grace.
+          From bridal transformations to everyday glam, our expert team specializes in makeup artistry,
+          hairstyling, skincare treatments, and more, using only the highest quality products and the latest techniques.
+          Whether you're preparing for a special occasion or simply indulging in some well-deserved pampering,
+          we ensure every visit leaves you glowing inside and out. At <b>Beauty by Roshnii</b>, we believe beauty is not just
+          seen — it’s felt.
+          Step into our serene space and let us create a look that reflects the best version of you.</p><br>
+        <!-- <a href="#contact" class="btn">Read More</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service-box">
+        <img src="Images/Services/BridalMakeup.png" width="50%" alt="Bridal" />
+        <h3>Bridal Makeup</h3>
+        <p class="p">From engagement to wedding day, we craft stunning bridal makeup that stays fresh, flawless, and
+          camera-ready all day long. Because every bride deserves to shine.</p>
+      </div>
+      <div class="service-box">
+        <img src="Images/Services/HairStyling.png" width="50%" alt="Hair" />
+        <h3>Hair Styling</h3>
+        <p class="p">Elevate your look with our expert hair styling services. From sleek buns to glamorous curls, we
+          create styles that enhance your beauty and suit every occasion.</p>
+      </div>
+      <div class="service-box">
+        <img src="Images/Services/SkinTreatments.png" width="50%" alt="Skin" />
+        <h3>Skin Treatments</h3>
+        <p class="p">Reveal your natural glow with our advanced skin treatments. From deep cleansing facials to targeted
+          therapies, we customize every service for healthy, radiant skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Images/Gallery/01.jpg" width="100%" alt="Gallery 1" />
+      <img src="Images/Gallery/02.jpg" width="100%" alt="Gallery 2" />
+      <img src="Images/Gallery/03.jpg" width="100%" alt="Gallery 3" />
+      <img src="Images/Gallery/04.jpg" width="100%" alt="Gallery 4" />
+      <img src="Images/Gallery/05.jpg" width="100%" alt="Gallery 5" />
+      <img src="Images/Gallery/06.jpg" width="100%" alt="Gallery 6" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Client Reviews</h2>
+    <div class="testimonial-boxes">
+      <div class="testimonial">
+        ⭐⭐⭐⭐⭐<br />
+        <p class="p">"Roshni did wonders on my wedding day! The bridal makeup was flawless,
+          elegant, and stayed perfect from the mandap to the reception.
+          I felt confident and beautiful!" — Sneha P.</p>
+      </div>
+      <div class="testimonial">
+        ⭐⭐⭐⭐⭐<br />
+        <p class="p">"Every time I visit for party makeup, I walk out glowing!
+          They understand exactly what suits your face and outfit. Never been disappointed!"
+          — Nirali M.</p>
+      </div>
+      <div class="testimonial">
+        ⭐⭐⭐⭐⭐<br />
+        <p class="p">"Loved the curls and volume they gave me before my shoot!
+          The stylist was patient and skilled. Got so many compliments!" — Jinal R.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="booking">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <input type="text" id="fullName" placeholder="Full Name" required />
+
+      <input type="tel" id="contactNumber" placeholder="Contact Number" pattern="[6-9]{1}[0-9]{9}" required
+        title="Enter a valid 10-digit Indian phone number starting with 6-9" />
+
+      <input type="date" id="appointmentDate" required />
+
+      <select id="serviceSelect" required>
+        <option value="">Select a Service</option>
+        <option value="Bridal Makeup">Bridal Makeup</option>
+        <option value="Hair Styling">Hair Styling</option>
+        <option value="Skin Treatment">Skin Treatment</option>
+      </select>
+
+      <button type="submit" class="btn">Confirm Appointment</button>
+    </form>
+
+    <div id="confirmationMessage" style="display:none; margin-top:15px; color:green;">
+      ✅ Your appointment has been successfully booked!
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Vadodara, Gujarat</p>
+    <p>📞 +91 98790 96484</p>
+    <p>✉️ beautybyroshnii@gmail.com</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/beautybyroshnii?igsh=a2dncG1jamFncHRw&utm_source=qr">Instagram</a> | <a
+        href="https://wa.me/+919879096484">WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Beauty by Roshnii | All Rights Reserved
+  </footer>
+
+</body>
+
+</html>
